@@ -1,9 +1,52 @@
 {
-    "Print Hello World": {
-        "prefix": "hell",
+    "Interviewbit class template":{
+        "prefix": "ict",
         "body": [
-            "print('Hello World')",
+            "class Solution:",
+            "\tdef ${1:solve}(self, ${2:args}):",
+            "\t\t# write your code here...",
+            "\t\t$4",
+            "\n\n",
+            "if __name__ == '__main__':",
+            "\tmysol = Solution()",
+            "\t# take inputs...",
+            "\t$3",
+            "\t",
+            "\tprint(mysol.${1:solve}(${2:args}))",
+            ""
         ],
-        "description": "printing hello world"
+        "description": "Class based template for interviewbit solutions"
+    },
+    
+    "Interviewbit function template":{
+        "prefix": "ift",
+        "body": [
+            "def ${1:solve}(${2:args}):",
+            "\t# write your code here...",
+            "\t$4",
+            "\n\n",
+            "if __name__ == '__main__':",
+            "\t# take inputs...",
+            "\t$3",
+            "\t",
+            "\tprint(${1:solve}(${2:args}))",
+            ""
+        ],
+        "description": "Only function based template for interviewbit solutions"
+    },
+    "print message":{
+        "prefix": "prm",
+        "body": "print('${message}')",
+        "description": "python print statement to print some message"
+    },
+    "print value":{
+        "prefix": "prv",
+        "body": "print(${value})",
+        "description": "python print statement to print some value without any message"
+    },
+    "print message and value":{
+        "prefix": "prmv",
+        "body": "print('${message}',${value})",
+        "description": "python print statement to print some message and value as well"
     }
 }
