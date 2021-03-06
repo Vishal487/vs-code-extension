@@ -34,6 +34,55 @@
         ],
         "description": "Only function based template for interviewbit solutions"
     },
+    "main body":{
+        "prefix": "main",
+        "body": [
+            "if __name__ == '__main__':",
+            "\t# main body starts here...",
+            "\t$1",
+            ""
+        ]
+    },
+    "function":{
+        "prefix": "fun",
+        "body": [
+                "def ${1:foo}(${2:args}):",
+                "\t$3"
+        ],
+        "description": "basic function"
+    },
+    "method":{
+        "prefix": "met",
+        "body": [
+            "def ${1:foo}(self, ${2:args}):",
+            "\t$3",
+            ""
+        ],
+        "description": "method for class"
+    },  
+    "class with constructor":{
+        "prefix": "cwc",
+        "body": [
+            "class ${1:Class}:",
+            "\tdef __init__(self, ${2:args}):",
+            "\t\t$3",
+            "\t",
+            "\tdef ${4:foo}(self, ${5:args}):",
+            "\t\t$6",
+            ""
+        ],
+        "description": "python class with constructor"
+    },
+    "class without constructor":{
+        "prefix": "cwoc",
+        "body": [
+            "class ${1:Class}:",
+            "\tdef ${2:foo}(self, ${3:args}):",
+            "\t\t$4",
+            ""
+        ],
+        "description": "python class without constructor"
+    },
     "print message":{
         "prefix": "prm",
         "body": "print('${message}')",
@@ -46,7 +95,7 @@
     },
     "print message and value":{
         "prefix": "prmv",
-        "body": "print('${message}',${value})",
+        "body": "print('${message}', ${value})",
         "description": "python print statement to print some message and value as well"
     }
 }

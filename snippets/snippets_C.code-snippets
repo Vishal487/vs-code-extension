@@ -1,16 +1,44 @@
 {
-    "c main template":{
-        "prefix": "cmt",
+    "c starter template":{
+        "prefix": "main",
         "body": [
             "#include<stdio.h>",
+            "#include<stdlib.h>",
             "",
             "int main()",
             "{",
+            "\t// write your code here...",
             "\t$1",
             "\treturn 0;",
             "}",
             ""
         ],
-        "description": "c test"
+        "description": "c basic starter template"
+    },
+    "function":{
+        "prefix": "fun",
+        "body": [
+            "${3:void} ${1:foo}(${2:args})",
+            "{",
+            "\t$4",
+            "}",
+            ""
+        ],
+        "description": "basic function template"
+    },
+    "print message":{
+        "prefix": "prm",
+        "body": "printf(\"${message}\");",
+        "description": "print message only"
+    },
+    "print value":{
+        "prefix": "prv",
+        "body": "printf(\"${1:%d}\", ${2:value});",
+        "description": "print value only"
+    },
+    "print message and value":{
+        "prefix": "prmv",
+        "body": "printf(\"${1:message} ${2:%d}\", ${3:value});",
+        "description": "print message and value"
     }
 }
