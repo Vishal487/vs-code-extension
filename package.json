@@ -13,7 +13,7 @@
         "snippets": [
             {
                 "language": "python",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/snippets_python.code-snippets"
             },
             {
                 "language": "c",
