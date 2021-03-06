@@ -1,0 +1,44 @@
+{
+    "cpp starter template": {
+        "prefix": "main",
+        "body": [
+            "#include <iostream>",
+            "using namespace std;",
+            "",
+            "int main()",
+            "{",
+            "\t// write your code here...",
+            "\t$1",
+            "\treturn 0;",
+            "}",
+            ""
+        ],
+        "description": "cpp basic starter template"
+    },
+    "function": {
+        "prefix": "fun",
+        "body": [
+            "${3:void} ${1:foo}(${2:args})",
+            "{",
+            "\t$4",
+            "}",
+            ""
+        ],
+        "description": "basic function template"
+    },
+    "print message": {
+        "prefix": "prm",
+        "body": "cout << \"${message}\";",
+        "description": "print message only"
+    },
+    "print value": {
+        "prefix": "prv",
+        "body": "cout << ${message};",
+        "description": "print value only"
+    },
+    "print message and value": {
+        "prefix": "prmv",
+        "body": "cout << \"${1:message} \" << ${2:value};",
+        "description": "print message and value"
+    }
+}

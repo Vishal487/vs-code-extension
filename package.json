@@ -18,6 +18,10 @@
             {
                 "language": "c",
                 "path": "./snippets/snippets_C.code-snippets"
+            },
+            {
+                "language": "cpp",
+                "path": "./snippets/snippets_cpp.code-snippets"
             }
         ]
     }
