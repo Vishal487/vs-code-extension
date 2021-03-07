@@ -54,6 +54,25 @@
             "\t\t$3",
             "\tpublic:",
             "\t\t${1:Class}(${2:args});",
+            "};",
+            "",
+            "${1:Class}::${1:Class}(${2:args})",
+            "{",
+            "\t$4",
+            "}",
+            "",
+        ],
+        "description": "cpp class with constructor"
+    },
+    "class with constructor and destructor": {
+        "prefix": "cwcd",
+        "body": [
+            "class ${1:Class}",
+            "{",
+            "\tprivate:",
+            "\t\t$3",
+            "\tpublic:",
+            "\t\t${1:Class}(${2:args});",
             "\t\t~${1:Class}();",
             "};",
             "",
@@ -67,7 +86,7 @@
             "\t$5",
             "}"
         ],
-        "description": "cpp class without constructor"
+        "description": "cpp class with constructor and destructor"
     },
     "print message": {
         "prefix": "prm",
