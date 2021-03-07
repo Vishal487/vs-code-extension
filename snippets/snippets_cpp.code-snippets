@@ -26,6 +26,49 @@
         ],
         "description": "basic function template"
     },
+    "class without constructor": {
+        "prefix": "cwoc",
+        "body": [
+            "class ${1:Class}",
+            "{",
+            "\t// Access specifiers...",
+            "\t${2:public}:",
+            "\t",
+            "\t// Data members...",
+            "\t$3",
+            "\t// Member functions...",
+            "\tvoid ${4:foo}(${5:args})",
+            "\t{",
+            "\t\t$6",
+            "\t}",
+            "};"
+        ],
+        "description": "cpp class without constructor"
+    },
+    "class with constructor": {
+        "prefix": "cwc",
+        "body": [
+            "class ${1:Class}",
+            "{",
+            "\tprivate:",
+            "\t\t$3",
+            "\tpublic:",
+            "\t\t${1:Class}(${2:args});",
+            "\t\t~${1:Class}();",
+            "};",
+            "",
+            "${1:Class}::${1:Class}(${2:args})",
+            "{",
+            "\t$4",
+            "}",
+            "",
+            "${1:Class}::~${1:Class}()",
+            "{",
+            "\t$5",
+            "}"
+        ],
+        "description": "cpp class without constructor"
+    },
     "print message": {
         "prefix": "prm",
         "body": "cout << \"${message}\";",
