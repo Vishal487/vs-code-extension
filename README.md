@@ -8,7 +8,11 @@ Describe specific features of your extension including screenshots of your exten
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[demo\]\(images/demo.gif\)
+<!-- ![demo](./images/demo.gif) -->
+<!-- <img src="./images/demo.gif"> -->
+
+![demo](https://user-images.githubusercontent.com/62737243/110229360-e27d0780-7f2e-11eb-9b77-1a40376e79d9.gif)
+
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
