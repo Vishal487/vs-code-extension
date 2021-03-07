@@ -1,11 +1,30 @@
 {
     "name": "code-snippets",
-    "displayName": "code-snippets",
-    "description": "This gives a boiler plate for programming language to get started quickly.",
+    "displayName": "Code Sniper",
+    "description": "code snippets for python/c/c++",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.54.0"
     },
+    "publisher": "Vishal487",
+    "author": {
+        "name": "Vishal Rao"
+    },
+    "homepage": "https://github.com/Vishal487/vs-code-extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Vishal487/vs-code-extension"
+    },
+    "icon": "images/logo.png",
+    "keywords": [
+        "python",
+        "c/cpp",
+        "python code snippets",
+        "c/cpp code snippets",
+        "code sniper",
+        "code snippets",
+        "snippets"
+    ],
     "categories": [
         "Snippets"
     ],

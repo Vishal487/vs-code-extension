@@ -1,8 +1,10 @@
+# Code Sniper
+
 ## VS Code snippets
 
 This extension contains `code snippets` for various programming language, more specifically for `python`, `c`, `cpp`. Let's hope for more in future!
 
-**Note::**
+**Note:: **
 This provide quick template for you if you do `interviewbit`.
 
 ![demo](https://user-images.githubusercontent.com/62737243/110229360-e27d0780-7f2e-11eb-9b77-1a40376e79d9.gif)
