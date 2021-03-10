@@ -1,8 +1,39 @@
 {
+    "Interviewbit class template":{
+        "prefix": "ict",
+        "body": "TODO",
+        "description": "Class based for interviewbit solutions"
+    },
+    "Interviewbit function template":{
+        "prefix": "ift",
+        "body": [
+            "#include <iostream>",
+            "#include <bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "${3:ret_type} ${1:solve}(${2:args})",
+            "{",
+            "\t// write your code here...",
+            "\t$5",
+            "}",
+            "",
+            "int main()",
+            "{",
+            "\t// take inputs...",
+            "\t$4",
+            "\t${3:ret_type} answer = ${1:solve}(${2:args})",
+            "\tcout << answer << endl;",
+            "\treturn 0;",
+            "}",
+            ""
+        ],
+        "description": "Only function based template for interviewbit solutions"
+    },
     "cpp starter template": {
         "prefix": "main",
         "body": [
             "#include <iostream>",
+            "#include <bits/stdc++.h>",
             "using namespace std;",
             "",
             "int main()",
